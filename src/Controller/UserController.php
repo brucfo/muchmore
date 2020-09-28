@@ -55,13 +55,19 @@ class UserController extends AbstractController
     public function atualiza(int $id, Request $request): Response
     {
         $dataRequest = $request->getContent();
+        $dataJson = json_decode($dataRequest);
         $userSent = $this->userRepository->find($id);
 
         if (empty($userSent)) {
             return new Response('', Response::HTTP_NOT_FOUND);
         }
+
+        if(!isset($dataJson->nome) && !isset($dataJson->senha)) {
+            return new Response('', Response::HTTP_BAD_REQUEST);
+        }
+
         $dataJson = json_decode($dataRequest);
-        $userSent->setEmail($dataJson->email);
+        $userSent->setNome($dataJson->nome);
 
         if(!empty($dataJson->senha)) {
             $userSent->setSenha(password_hash($dataJson->senha, PASSWORD_ARGON2ID));

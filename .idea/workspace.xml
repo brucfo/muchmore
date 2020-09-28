@@ -31,7 +31,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601125168787</updated>
-      <workItem from="1601125169849" duration="12872000" />
+      <workItem from="1601125169849" duration="26808000" />
     </task>
     <servers />
   </component>
@@ -43,9 +43,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601135672688" />
-    <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601138040739">
+    <state x="613" y="22" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601247979103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="790" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601138040739" />
+    <state x="613" y="22" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601247979103" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601247680128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601247680128" />
+    <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601248018696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601248018696" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601238557482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601238557482" />
   </component>
 </project>
