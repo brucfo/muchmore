@@ -20,16 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f48873-0d70-40d1-9b11-4a86f69d3924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20200928115417.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LinkController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/UrlShort.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UrlShortRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/StatsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Link.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helper/EncodedLink.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/EncodedLink.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LinkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LinkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/UrlShort.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/UrlShort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/UserTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +109,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -125,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601125168787</updated>
       <workItem from="1601125169849" duration="27083000" />
-      <workItem from="1601292571014" duration="10699000" />
+      <workItem from="1601292571014" duration="18022000" />
     </task>
     <servers />
   </component>
@@ -144,22 +140,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1601295011893">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1601331575564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601295011893" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601331575564" />
     <state x="613" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601294892134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601294892134" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601294988677">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601328705705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601294988677" />
-    <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601294947335">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601328705705" />
+    <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601326233530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="790" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601294947335" />
+    <state x="790" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601326233530" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601238557482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -4,11 +4,13 @@ namespace App\Entity;
 
 use App\Repository\UrlShortRepository;
 use Doctrine\ORM\Mapping as ORM;
+use http\Env;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @ORM\Entity(repositoryClass=UrlShortRepository::class)
  */
-class UrlShort
+class UrlShort implements \JsonSerializable
 {
     /**
      * @ORM\Id
@@ -105,5 +107,18 @@ class UrlShort
         $this->user = $user;
 
         return $this;
+    }
+
+    public function jsonSerialize()
+    {
+        $userName = is_null($this->getUser()) ? NULL : $this->getUser()->getNome();
+        $short = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $this->getCrypt();
+        return [
+            'original' => $this->getUrl(),
+            'short' => $short,
+            'createdAt' => $this->getCreatedat(),
+            'user' => $userName,
+            'stats' => ['clicks' => $this->getClicks()]
+        ];
     }
 }

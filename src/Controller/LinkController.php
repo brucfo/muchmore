@@ -13,6 +13,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -98,7 +99,7 @@ class LinkController extends AbstractController
     /**
      * @Route("/{link}", methods={"GET"})
      */
-    public function accessLink(string $link, Request $request)
+    public function accessLink(string $link, Request $request): RedirectResponse
     {
         try {
             $idUrlShort = $this->linkEncode->getDecodedLink($link);
@@ -106,16 +107,11 @@ class LinkController extends AbstractController
             if(empty($dataUrlShort)) {
                 return new JsonResponse('', Response::HTTP_BAD_REQUEST);
             }
-            $short = 'http://' . $request->server->get('HTTP_HOST') . '/' . $dataUrlShort->getCrypt();
-            $arReturn['url'] = [
-                'original' => $dataUrlShort->getUrl(),
-                'short' => $short
-            ];
 
             $dataUrlShort->setClicks($dataUrlShort->getClicks()+1);
             $this->entityManager->flush();
 
-            return new JsonResponse($arReturn);
+            return $this->redirect($dataUrlShort->getUrl());
         } catch (Exception $e) {
             return new JsonResponse($error['data'] = $e->getMessage(), Response::HTTP_BAD_REQUEST);
         }
