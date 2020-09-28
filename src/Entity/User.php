@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -31,6 +33,16 @@ class User implements \JsonSerializable
      * @ORM\Column(type="string", length=150)
      */
     private $senha;
+
+    /**
+     * @ORM\OneToMany(targetEntity=UrlShort::class, mappedBy="user")
+     */
+    private $urlShorts;
+
+    public function __construct()
+    {
+        $this->urlShorts = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -80,5 +92,36 @@ class User implements \JsonSerializable
             'nome' => $this->getNome(),
             'email' => $this->getEmail()
         ];
+    }
+
+    /**
+     * @return Collection|UrlShort[]
+     */
+    public function getUrlShorts(): Collection
+    {
+        return $this->urlShorts;
+    }
+
+    public function addUrlShort(UrlShort $urlShort): self
+    {
+        if (!$this->urlShorts->contains($urlShort)) {
+            $this->urlShorts[] = $urlShort;
+            $urlShort->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUrlShort(UrlShort $urlShort): self
+    {
+        if ($this->urlShorts->contains($urlShort)) {
+            $this->urlShorts->removeElement($urlShort);
+            // set the owning side to null (unless already changed)
+            if ($urlShort->getUser() === $this) {
+                $urlShort->setUser(null);
+            }
+        }
+
+        return $this;
     }
 }

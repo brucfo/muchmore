@@ -21,12 +21,20 @@ class EncodedLink
         return $finalValue;
     }
 
+    public function getDecodedLink(string $value): int
+    {
+        if (empty($value)) {
+            throw new DomainException('Dado não pode ser vazio.');
+        }
+        $finalValue = $this->uncrypt($value);
+        return intval($finalValue);
+    }
+
     private function crypt(int $number): string
     {
-        $arNumber  = $this->splitNumber($number);
+        $arNumber = $this->splitNumber($number);
         $string = $this->generateCrypt($arNumber);
-        print_r($string);
-        die();
+        return $string;
 
     }
 
@@ -47,5 +55,27 @@ class EncodedLink
             }
         }
         return $string;
+    }
+
+    protected function uncrypt(string $string): int
+    {
+        $arString = $this->splitString($string);
+        $number = $this->revertCrypt($arString);
+        return $number;
+    }
+
+    private function splitString(string $string): array
+    {
+        return str_split($string);
+    }
+
+    private function revertCrypt(array $arData): int
+    {
+        $number = null;
+        $arInvert = array_flip($this->arLetter);
+        foreach ($arData as $v) {
+            $number .= $arInvert[$v];
+        }
+        return $number;
     }
 }
