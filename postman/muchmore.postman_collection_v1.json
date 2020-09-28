@@ -1,0 +1,237 @@
+{
+	"id": "e021a6d8-5e96-4a80-bdd0-614df0a9204f",
+	"name": "muchmore",
+	"description": "Desafio Much More",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"9cec3fd2-b599-4ecd-a299-9f705d138635"
+	],
+	"folders_order": [
+		"7a4d6c19-f293-40d4-998c-aaa84b417d40",
+		"c9dd03ae-f803-459d-acf8-e472b693abce",
+		"f46c5bc3-7f7f-459b-9bb0-4d754b2440c8"
+	],
+	"protocolProfileBehavior": {},
+	"folders": [
+		{
+			"id": "f46c5bc3-7f7f-459b-9bb0-4d754b2440c8",
+			"name": "Stats",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e021a6d8-5e96-4a80-bdd0-614df0a9204f",
+			"folder": null,
+			"order": [
+				"dee34803-762c-4930-9c01-754e928b191b",
+				"8180a7a5-799c-4d64-9726-9108c840a50c"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "c9dd03ae-f803-459d-acf8-e472b693abce",
+			"name": "link",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e021a6d8-5e96-4a80-bdd0-614df0a9204f",
+			"folder": null,
+			"order": [
+				"6e33a59e-3b96-49dd-860a-43199bb13559"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "7a4d6c19-f293-40d4-998c-aaa84b417d40",
+			"name": "user",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e021a6d8-5e96-4a80-bdd0-614df0a9204f",
+			"folder": null,
+			"order": [
+				"8cb84d51-d3d6-4af5-95a5-373c651b4e9f",
+				"a98324fa-97e8-46be-8f3e-5cff8b24a57d",
+				"4d7656d2-a69b-431b-9f3e-c361792af7cf",
+				"73e21219-9445-4de8-b050-b8d78d68161a"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"requests": [
+		{
+			"id": "4d7656d2-a69b-431b-9f3e-c361792af7cf",
+			"name": "Buscar-por-ID",
+			"url": "http://localhost:8081/usuarios/1",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "7a4d6c19-f293-40d4-998c-aaa84b417d40",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "6e33a59e-3b96-49dd-860a-43199bb13559",
+			"name": "Gerar",
+			"url": "http://localhost:8081/links",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "c9dd03ae-f803-459d-acf8-e472b693abce",
+			"rawModeData": "{\r\n    \"link\": \"https://www1.folha.uol.com.br/educacao/2020/09/escolas-municipais-de-sp-poderao-receber-alunos-2-vezes-na-semana-por-no-maximo-2-horas.shtml\",\r\n    \"usuario\": 1\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "73e21219-9445-4de8-b050-b8d78d68161a",
+			"name": "AtualizarUsuario",
+			"url": "http://localhost:8081/usuarios/1",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "7a4d6c19-f293-40d4-998c-aaa84b417d40",
+			"rawModeData": "{\r\n    \"nome\": \"Bruno C Fonseca\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8180a7a5-799c-4d64-9726-9108c840a50c",
+			"name": "Stats By User",
+			"url": "http://localhost:8081/stats/user/1",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "f46c5bc3-7f7f-459b-9bb0-4d754b2440c8",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "8cb84d51-d3d6-4af5-95a5-373c651b4e9f",
+			"name": "Cadastrar-Usuario",
+			"url": "http://localhost:8081/usuarios",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "7a4d6c19-f293-40d4-998c-aaa84b417d40",
+			"rawModeData": "{\r\n    \"nome\": \"Primeiro Usuario\",\r\n    \"email\": \"first@usuario.com\",\r\n    \"senha\": \"123456\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9cec3fd2-b599-4ecd-a299-9f705d138635",
+			"name": "Link Short (Redirect)",
+			"url": "http://localhost:8081/kV8Z",
+			"description": "Para a página que deveria fazer o redirect",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "a98324fa-97e8-46be-8f3e-5cff8b24a57d",
+			"name": "Listar-Todos",
+			"url": "http://localhost:8081/usuarios",
+			"description": "Lista todos os usuários do banco de dados",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "7a4d6c19-f293-40d4-998c-aaa84b417d40",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "dee34803-762c-4930-9c01-754e928b191b",
+			"name": "Stats Short Link",
+			"url": "http://localhost:8081/stats/kV8Z",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "f46c5bc3-7f7f-459b-9bb0-4d754b2440c8",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
