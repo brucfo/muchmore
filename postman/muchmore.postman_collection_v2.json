@@ -33,7 +33,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8081/usuarios",
+						"url": "http://localhost:8081/usuarios/users",
 						"description": "Lista todos os usuários do banco de dados"
 					},
 					"response": []
@@ -60,9 +60,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Bruno C Fonseca\"\r\n}"
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Carlão\"\r\n}"
 						},
-						"url": "http://localhost:8081/usuarios/1"
+						"url": "http://localhost:8081/usuarios"
 					},
 					"response": []
 				}
@@ -102,7 +102,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8081/stats/kV8Z"
+						"url": "http://localhost:8081/stats/b"
 					},
 					"response": []
 				},
@@ -123,7 +123,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8081/kV8Z",
+				"url": "http://localhost:8081/b",
 				"description": "Para a página que deveria fazer o redirect"
 			},
 			"response": []

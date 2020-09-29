@@ -111,7 +111,7 @@
 		{
 			"id": "73e21219-9445-4de8-b050-b8d78d68161a",
 			"name": "AtualizarUsuario",
-			"url": "http://localhost:8081/usuarios/1",
+			"url": "http://localhost:8081/usuarios",
 			"description": "",
 			"data": [],
 			"dataOptions": null,
@@ -131,7 +131,7 @@
 			"auth": null,
 			"events": [],
 			"folder": "7a4d6c19-f293-40d4-998c-aaa84b417d40",
-			"rawModeData": "{\r\n    \"nome\": \"Bruno C Fonseca\"\r\n}",
+			"rawModeData": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Carlão\"\r\n}",
 			"headers": "Content-Type: application/json\n",
 			"pathVariables": {}
 		},
@@ -183,7 +183,7 @@
 		{
 			"id": "9cec3fd2-b599-4ecd-a299-9f705d138635",
 			"name": "Link Short (Redirect)",
-			"url": "http://localhost:8081/kV8Z",
+			"url": "http://localhost:8081/b",
 			"description": "Para a página que deveria fazer o redirect",
 			"data": null,
 			"dataOptions": null,
@@ -200,7 +200,7 @@
 		{
 			"id": "a98324fa-97e8-46be-8f3e-5cff8b24a57d",
 			"name": "Listar-Todos",
-			"url": "http://localhost:8081/usuarios",
+			"url": "http://localhost:8081/usuarios/users",
 			"description": "Lista todos os usuários do banco de dados",
 			"data": null,
 			"dataOptions": null,
@@ -218,7 +218,7 @@
 		{
 			"id": "dee34803-762c-4930-9c01-754e928b191b",
 			"name": "Stats Short Link",
-			"url": "http://localhost:8081/stats/kV8Z",
+			"url": "http://localhost:8081/stats/b",
 			"description": "",
 			"data": null,
 			"dataOptions": null,

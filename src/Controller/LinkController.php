@@ -99,7 +99,7 @@ class LinkController extends AbstractController
     /**
      * @Route("/{link}", methods={"GET"})
      */
-    public function accessLink(string $link, Request $request): RedirectResponse
+    public function accessLink(string $link, Request $request)
     {
         try {
             $idUrlShort = $this->linkEncode->getDecodedLink($link);

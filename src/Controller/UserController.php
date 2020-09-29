@@ -44,19 +44,19 @@ class UserController extends AbstractController
         $this->entityManager->persist($user);
         $this->entityManager->flush();
 
-        $response = json_encode(['data' => "Usuário criado {$user->getEmail()} com sucesso."]);
+        $response = ['data' => "Usuário criado {$user->getEmail()} com sucesso."];
 
         return new JsonResponse($response, Response::HTTP_CREATED);
     }
 
     /**
-     * @Route("/usuarios/{id}", methods={"PUT"})
+     * @Route("/usuarios", methods={"PUT"})
      */
-    public function atualiza(int $id, Request $request): Response
+    public function atualiza(Request $request): Response
     {
         $dataRequest = $request->getContent();
         $dataJson = json_decode($dataRequest);
-        $userSent = $this->userRepository->find($id);
+        $userSent = $this->userRepository->find($dataJson->id);
 
         if (empty($userSent)) {
             return new Response('', Response::HTTP_NOT_FOUND);
@@ -75,13 +75,13 @@ class UserController extends AbstractController
 
         $this->entityManager->flush();
 
-        $response = json_encode(['data' => "Usuário {$userSent->getNome()} atualizado com sucesso."]);
+        $response = ['data' => "Usuário {$userSent->getNome()} atualizado com sucesso."];
         return new JsonResponse($response);
 
     }
 
     /**
-     * @Route("/usuarios", methods={"GET"})
+     * @Route("/usuarios/users", methods={"GET"})
      */
     public function buscarTodos(): Response
     {

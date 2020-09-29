@@ -44,14 +44,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/usuarios",
+							"raw": "http://localhost:8081/usuarios/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"usuarios"
+								"usuarios",
+								"users"
 							]
 						},
 						"description": "Lista todos os usuários do banco de dados"
@@ -91,18 +92,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Bruno C Fonseca\"\r\n}"
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Carlão\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8081/usuarios/1",
+							"raw": "http://localhost:8081/usuarios",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"usuarios",
-								"1"
+								"usuarios"
 							]
 						}
 					},
@@ -155,7 +155,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/stats/kV8Z",
+							"raw": "http://localhost:8081/stats/b",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -163,7 +163,7 @@
 							"port": "8081",
 							"path": [
 								"stats",
-								"kV8Z"
+								"b"
 							]
 						}
 					},
@@ -199,14 +199,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/kV8Z",
+					"raw": "http://localhost:8081/b",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8081",
 					"path": [
-						"kV8Z"
+						"b"
 					]
 				},
 				"description": "Para a página que deveria fazer o redirect"
