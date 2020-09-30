@@ -21,19 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b8f48873-0d70-40d1-9b11-4a86f69d3924" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postman/muchmore.postman_collection_v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman/muchmore.postman_collection_v1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postman/muchmore.postman_collection_v2.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman/muchmore.postman_collection_v2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postman/muchmore.postman_collection_v2_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman/muchmore.postman_collection_v2_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LinkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LinkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helper/EncodedLink.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/EncodedLink.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -123,7 +118,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601125168787</updated>
       <workItem from="1601125169849" duration="27083000" />
-      <workItem from="1601292571014" duration="23126000" />
+      <workItem from="1601292571014" duration="23939000" />
+      <workItem from="1601463967610" duration="3086000" />
     </task>
     <servers />
   </component>
@@ -140,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1601331575564">
@@ -154,10 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601328705705" />
-    <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601326233530">
+    <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601464261669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="790" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601326233530" />
+    <state x="790" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601464261669" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601238557482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

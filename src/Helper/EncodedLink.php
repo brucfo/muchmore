@@ -47,7 +47,10 @@ class EncodedLink
     {
         $string = null;
         foreach ($arData as $v) {
-            if ($v < 62) {
+            if($v === '00'){
+                $string .= $this->arLetter[substr($v, 0, 1)];
+                $string .= $this->arLetter[substr($v, 1, 2)];
+            } else if ($v < 62 || $v !== '00') {
                 $string .= $this->arLetter[$v];
             } else {
                 $string .= $this->arLetter[substr($v, 0, 1)];
