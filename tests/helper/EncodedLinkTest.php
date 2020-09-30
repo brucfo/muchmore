@@ -18,9 +18,7 @@ class EncodedLinkTest extends TestCase
         self::assertEquals('ka', $resposta);
         $resposta = $encode->getEncodedLink(1);
         self::assertEquals('b', $resposta);
-    }
-
-    public function encodeAleatorio(){
-
+        $resposta = $encode->getEncodedLink(6300);
+        self::assertEquals('gdaa', $resposta);
     }
 }
