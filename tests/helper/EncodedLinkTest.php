@@ -20,5 +20,11 @@ class EncodedLinkTest extends TestCase
         self::assertEquals('b', $resposta);
         $resposta = $encode->getEncodedLink(6300);
         self::assertEquals('gdaa', $resposta);
+        $resposta = $encode->getEncodedLink(1001);
+        self::assertEquals('kab', $resposta);
+        $resposta = $encode->getEncodedLink(1009);
+        self::assertEquals('kaj', $resposta);
+        $resposta = $encode->getEncodedLink(1010);
+        self::assertEquals('kk', $resposta);
     }
 }

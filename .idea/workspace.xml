@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f48873-0d70-40d1-9b11-4a86f69d3924" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helper/EncodedLink.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/EncodedLink.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/helper/EncodedLinkTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/helper/EncodedLinkTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
@@ -106,8 +108,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/unit" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="PHPUnit.tests">
+    <configuration name="EncodedLinkTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Test\Helper\EncodedLinkTest" file="$PROJECT_DIR$/tests/helper/EncodedLinkTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" directory="$PROJECT_DIR$/tests" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHPUnit.EncodedLinkTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +139,7 @@
       <updated>1601125168787</updated>
       <workItem from="1601125169849" duration="27083000" />
       <workItem from="1601292571014" duration="23939000" />
-      <workItem from="1601463967610" duration="3231000" />
+      <workItem from="1601463967610" duration="9078000" />
     </task>
     <servers />
   </component>
@@ -139,6 +159,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="674" y="161" key="#PHP" timestamp="1601473730696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="674" y="161" key="#PHP/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601473730696" />
+    <state x="540" y="175" key="#Test_Frameworks" timestamp="1601474206739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="#Test_Frameworks/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474206739" />
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1601331575564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,6 +179,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601328705705" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601474319166">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474319166" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1601474518344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474518344" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1601474518344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474518344" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1601474518344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474518344" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1601474518344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474518344" />
     <state x="790" y="243" key="NewPhpClassDialog" timestamp="1601464261669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -159,5 +207,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601238557482" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601474491600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601474491600" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1601468807787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601468807787" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/muchmore@tests.xml" NAME="tests Coverage Results" MODIFIED="1601473654580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

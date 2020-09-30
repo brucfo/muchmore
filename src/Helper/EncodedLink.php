@@ -9,6 +9,7 @@ class EncodedLink
     private $arLetter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
         't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
         'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    private $exceptionNumbers = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
     private $base = 0;
     private $length = 0;
 
@@ -47,7 +48,7 @@ class EncodedLink
     {
         $string = null;
         foreach ($arData as $v) {
-            if($v === '00'){
+            if(in_array($v, $this->exceptionNumbers) && strlen($v) == 2){
                 $string .= $this->arLetter[substr($v, 0, 1)];
                 $string .= $this->arLetter[substr($v, 1, 2)];
             } else if ($v < 62) {
