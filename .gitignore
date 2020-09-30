@@ -14,5 +14,9 @@
 .phpunit
 .phpunit.result.cache
 /phpunit.xml
-/.idea/
 ###< symfony/phpunit-bridge ###
+
+###> PHPStorm Files ###
+.idea
+.DS_Store
+###< PHPStorm Files ###
